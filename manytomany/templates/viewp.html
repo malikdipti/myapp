@@ -1,0 +1,17 @@
+<table align="center" border="1">
+    <tr>
+        <th colspan="2" style="background-color: darkorange;color: white;">
+            Publisher Table
+        </th>
+    </tr>
+    <tr>
+        <th>IDNO</th>
+        <th>NAME</th>
+    </tr>
+    {% for x in data %}
+        <tr>
+            <td>{{ x.pid }}</td>
+            <td>{{ x.name }}</td>
+         </tr>
+    {% endfor %}
+</table>

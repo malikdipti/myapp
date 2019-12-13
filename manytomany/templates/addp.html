@@ -1,0 +1,21 @@
+<form action="{% url 'savep' %}" method="post">
+    {% csrf_token %}
+    <table align="center" border="1">
+        <tr style="background-color: orange;color: white">
+            <th colspan="2"> Add Publisher</th>
+        </tr>
+        <tr>
+            <td>
+                NAME
+            </td>
+             <td>
+                {{ form.name }}
+            </td>
+        </tr>
+        <tr>
+            <th colspan="2">
+                <button type="submit">SAVE</button>
+            </th>
+        </tr>
+    </table>
+</form>

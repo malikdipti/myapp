@@ -1,0 +1,26 @@
+<table align="center" border="5">
+    <tr>
+        <th colspan="3" style="background-color: darkorange;color: white;">
+            Publisher Table
+        </th>
+    </tr>
+    <tr style="background-color: darkslategray;color: white;">
+        <th width="65" height="36">IDNO</th>
+        <th  width="100" height="36">NAME</th>
+        <th width="150" height="36">PUBLISHER</th>
+    </tr>
+    {% for x in data %}
+        <tr>
+            <td width="80">{{ x.aid }}</td>
+            <td width="100">{{ x.name }}</td>
+        <td width="200" height="50">
+            {% for y in x.publisher_name.all %}
+
+            <li style="color: chocolate;">{{ y }}</li>
+
+            {% endfor %}
+        </td>
+
+         </tr>
+    {% endfor %}
+</table>
