@@ -1,0 +1,20 @@
+<form action="{% url 'savebc' %}" method="post">
+    {% csrf_token %}
+    <table align="center" border="1">
+        <tr style="background-color: orange;color: white">
+            <th colspan="2">
+              BIRIYANI CATEGORY
+            </th>
+        </tr>
+        <tr>
+            <td>BCAT NAME</td>
+            <td>{{ form.b_cat }}</td>
+
+        </tr>
+         <tr>
+            <th colspan="2">
+               <button type="submit" >SAVE</button>
+            </th>
+        </tr>
+    </table>
+</form>

@@ -1,0 +1,21 @@
+<body>
+
+
+        <h3>
+            <a href="{% url 'addbc' %}">Add Biriyani Categories</a>
+        </h3>
+        <h3>
+            <a href="{% url 'viewbc' %}">View Biriyani Categories</a>
+        </h3>
+        <h3>
+            <a href="{% url 'addbt' %}">Add Biriyani Type</a>
+        </h3>
+        <h3>
+            <a href="{% url 'viewbt' %}">View Biriyani Types</a>
+        </h3>
+
+        {% for x in messages %}
+           <span style="color: darkgreen;">{{ x }}</span>
+        {% endfor %}
+
+</body>

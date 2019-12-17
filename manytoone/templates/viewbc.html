@@ -1,0 +1,17 @@
+<table align="center" border="1">
+    <tr style="background-color: orange;color: white">
+        <th colspan="2">Biriyani Categogy</th>
+    </tr>
+    <tr style="background-color: darkgreen;color: white">
+        <th>IDNO</th>
+        <th>Category</th>
+    </tr>
+
+    {% for x in data %}
+    <tr>
+    <td>{{ x.bc_id }}</td>
+    <td>{{ x.b_cat }}</td>
+    </tr>
+    {% endfor %}
+
+</table>

@@ -1,0 +1,31 @@
+<form action="{% url 'savebt' %}" method="post">
+    {% csrf_token %}
+    <table align="center" border="1">
+        <tr style="background-color: orange;color: white">
+            <th colspan="2">
+              BIRIYANI Type
+            </th>
+
+        </tr>
+        <tr>
+            <td>Biriyani Name</td>
+            <td>{{ form.b_name}}</td>
+
+        </tr>
+         <tr>
+            <td>Biriyani Price</td>
+            <td>{{ form.b_price }}</td>
+
+        </tr>
+        <tr>
+            <td>Biriyani Categogy</td>
+            <td>{{ form.b_type }}</td>
+
+        </tr>
+         <tr>
+            <th colspan="2">
+               <button type="submit" >SAVE</button>
+            </th>
+        </tr>
+    </table>
+</form>

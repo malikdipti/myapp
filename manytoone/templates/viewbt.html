@@ -1,0 +1,21 @@
+<table align="center" border="1">
+    <tr style="background-color: orange;color: white">
+        <th colspan="4">Biriyani Types</th>
+    </tr>
+    <tr style="background-color: darkgreen;color: white">
+        <th>IDNO</th>
+        <th>Biriyani name</th>
+        <th>Biriyani price</th>
+        <th>Category</th>
+    </tr>
+
+    {% for x in data %}
+    <tr>
+    <td>{{ x.b_id }}</td>
+    <td>{{ x.b_name}}</td>
+    <td>{{ x.b_price}}</td>
+    <td>{{ x.b_type}}</td>
+    </tr>
+    {% endfor %}
+
+</table>
